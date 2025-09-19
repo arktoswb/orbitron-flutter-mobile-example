@@ -1,0 +1,35 @@
+name: orbitron_flutter_app
+description: A Flutter mobile app demonstrating Orbitron fonts
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Orbitron
+      fonts:
+        - asset: fonts/Orbitron/static/Orbitron-Regular.ttf
+          weight: 400
+        - asset: fonts/Orbitron/static/Orbitron-Medium.ttf
+          weight: 500
+        - asset: fonts/Orbitron/static/Orbitron-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Orbitron/static/Orbitron-Bold.ttf
+          weight: 700
+        - asset: fonts/Orbitron/static/Orbitron-ExtraBold.ttf
+          weight: 800
+        - asset: fonts/Orbitron/static/Orbitron-Black.ttf
+          weight: 900
