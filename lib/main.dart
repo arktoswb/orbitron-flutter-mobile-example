@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'font_showcase.dart';
 
 void main() {
   runApp(const OrbitronFontApp());
@@ -52,6 +53,20 @@ class _OrbitronFontHomePageState extends State<OrbitronFontHomePage> {
             color: Colors.white,
           ),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.font_download, color: Colors.cyan),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const FontShowcaseScreen(),
+                ),
+              );
+            },
+            tooltip: 'Font Showcase',
+          ),
+        ],
       ),
       body: Center(
         child: SingleChildScrollView(
